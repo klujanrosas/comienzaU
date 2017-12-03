@@ -86,6 +86,7 @@ const mockContent = [
     id: 9006,
     content: 'SUBREQUISTO 1 DETALLES'
   },
+  // Como esto está comentado, cuando seleccionemos la opción de SUBREQUISITO-2 nos saldrá un mensaje de que no hay información en vez de crashear
   // {
   //   id: 9007,
   //   content: 'SUBREQUISITO 2 DETALLES'
