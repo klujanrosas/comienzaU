@@ -6,7 +6,7 @@ class ChatTab extends React.Component {
     return (
       <View>
         <Text>
-          QuestionsTab
+          ChatTab
         </Text>
       </View>
     );
