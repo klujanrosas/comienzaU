@@ -40,6 +40,16 @@ const mockOptions = [
     id: 9005,
     parent: 1001,
     title: 'REQUISITO 2',
+  },
+  {
+    id: 9006,
+    parent: 9004,
+    title: 'SUB-REQUISITO-1'
+  },
+  {
+    id: 9007,
+    parent: 9004,
+    title: 'SUB-REQUISITO-2'
   }
 ];
 
@@ -63,7 +73,15 @@ const mockContent = [
   {
     id: 9005,
     content: 'Detalles del requisito 2asdasdsadsd'
-  }
+  },
+  {
+    id: 9006,
+    content: 'SUBREQUISTO 1 DETALLES'
+  },
+  // {
+  //   id: 9007,
+  //   content: 'SUBREQUISITO 2 DETALLES'
+  // }
 ];
 
 const INITIAL_STATE = {
@@ -84,7 +102,10 @@ export default (state = INITIAL_STATE, action) => {
         selectedOption: action.optionID,
         filteredOptions,
         selectedContent: filteredOptions.length === 0 ?
-          mockContent.filter(content => content.id === action.optionID)[0].content : null
+          mockContent.filter(content => content.id === action.optionID).length > 0 ?
+          mockContent.filter(content => content.id === action.optionID)[0].content :
+          'Oops, Parece que no hay información para esta opción.' :
+          null
       };
     default:
       return state;
