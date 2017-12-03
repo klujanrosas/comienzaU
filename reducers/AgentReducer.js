@@ -53,6 +53,14 @@ const mockOptions = [
   }
 ];
 
+// En el array de arriba se ponen todas las opciones en jerarquia de padre hijo
+// Cuando se llegue al "final" de una rama, poner su ID y su contenido a mostrar acá abajo
+// en la forma
+// {
+//    id: ID_DE_LA_ULTIMA_RAMA,
+//    content: CONTENIDO_A_MOSTRAR
+// }
+
 const mockContent = [
   {
     id: 9001,
