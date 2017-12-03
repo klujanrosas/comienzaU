@@ -7,7 +7,7 @@ import { NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { Layout } from '../config';
+import { Layout, Theme } from '../config';
 import logo from '../assets/images/logo-splash.png';
 
 class SplashScreen extends React.Component {
@@ -16,7 +16,7 @@ class SplashScreen extends React.Component {
       () => {
         this.props.toHome();
       },
-      500
+      1000
     );
   }
 
@@ -24,7 +24,7 @@ class SplashScreen extends React.Component {
     const styles = {
       container: {
         flex: 1,
-        backgroundColor: '#FFF',
+        backgroundColor: Theme.Color.Onyx,
         alignItems: 'center',
         justifyContent: 'center'
       },
