@@ -1,8 +1,14 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import {
+  View,
+  Image
+} from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+
+import { Layout } from '../config';
+import logo from '../assets/images/logo-splash.png';
 
 class SplashScreen extends React.Component {
   componentDidMount() {
@@ -10,16 +16,30 @@ class SplashScreen extends React.Component {
       () => {
         this.props.toHome();
       },
-      1000
+      3000
     );
   }
 
   render() {
+    const styles = {
+      container: {
+        flex: 1,
+        backgroundColor: '#FFF',
+        alignItems: 'center',
+        justifyContent: 'center'
+      },
+      image: {
+        width: Layout.width - (Layout.isSmallDevice ? 100 : 50),
+        maxWidth: Layout.width
+      }
+    };
     return (
-      <View>
-        <Text>
-          SplashScreen
-        </Text>
+      <View style={styles.container}>
+        <Image
+          style={styles.image}
+          resizeMode="contain"
+          source={logo}
+        />
       </View>
     );
   }
