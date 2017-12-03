@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "comienzaupn.app"
-               BlueprintName = "comienzaupn"
-               ReferencedContainer = "container:comienzaupn.xcodeproj">
+               BuildableName = "ComienzaUPN.app"
+               BlueprintName = "ComienzaUPN"
+               ReferencedContainer = "container:ComienzaUPN.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "comienzaupnTests.xctest"
-               BlueprintName = "comienzaupnTests"
-               ReferencedContainer = "container:comienzaupn.xcodeproj">
+               BuildableName = "ComienzaUPNTests.xctest"
+               BlueprintName = "ComienzaUPNTests"
+               ReferencedContainer = "container:ComienzaUPN.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "comienzaupnTests.xctest"
-               BlueprintName = "comienzaupnTests"
-               ReferencedContainer = "container:comienzaupn.xcodeproj">
+               BuildableName = "ComienzaUPNTests.xctest"
+               BlueprintName = "ComienzaUPNTests"
+               ReferencedContainer = "container:ComienzaUPN.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "comienzaupn.app"
-            BlueprintName = "comienzaupn"
-            ReferencedContainer = "container:comienzaupn.xcodeproj">
+            BuildableName = "ComienzaUPN.app"
+            BlueprintName = "ComienzaUPN"
+            ReferencedContainer = "container:ComienzaUPN.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "comienzaupn.app"
-            BlueprintName = "comienzaupn"
-            ReferencedContainer = "container:comienzaupn.xcodeproj">
+            BuildableName = "ComienzaUPN.app"
+            BlueprintName = "ComienzaUPN"
+            ReferencedContainer = "container:ComienzaUPN.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "comienzaupn.app"
-            BlueprintName = "comienzaupn"
-            ReferencedContainer = "container:comienzaupn.xcodeproj">
+            BuildableName = "ComienzaUPN.app"
+            BlueprintName = "ComienzaUPN"
+            ReferencedContainer = "container:ComienzaUPN.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
