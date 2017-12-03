@@ -1,15 +1,15 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { ScrollView, Text, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { setActiveOption } from '../actions';
-import { Theme } from '../config';
-import { OptionCard } from '../lib';
+import { Theme, Layout } from '../config';
+import { OptionCard, Button } from '../lib';
 
 class QuestionsTab extends React.Component {
   static propTypes = {
-    filteredOptions: PropTypes.array,
+    filteredOptions: PropTypes.arrayOf(PropTypes.shape),
     selectedContent: PropTypes.string,
     setActiveOption: PropTypes.func,
     selectedOption: PropTypes.number
@@ -39,13 +39,13 @@ class QuestionsTab extends React.Component {
     const { selectedOption } = this.props;
     if (selectedOption && selectedOption !== -1) {
       return (
-        <TouchableOpacity
+        <Button
           onPress={() => {
             this.props.setActiveOption(-1);
           }}
-        >
-          <Text>Atrás</Text>
-        </TouchableOpacity>
+          width={60}
+          label="INICIO"
+        />
       );
     }
 
@@ -56,16 +56,19 @@ class QuestionsTab extends React.Component {
     const styles = {
       container: {
         flex: 1,
-        backgroundColor: Theme.Color.White
+        backgroundColor: Theme.Color.White,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingHorizontal: Layout.isSmallDevice ? 15 : 30
       }
     };
     return (
-      <View
-        style={styles.container}
+      <ScrollView
+        contentContainerStyle={styles.container}
       >
         {this.renderContent()}
         {this.renderButton()}
-      </View>
+      </ScrollView>
     );
   }
 }

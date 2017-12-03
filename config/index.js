@@ -1,11 +1,11 @@
 import { Dimensions } from 'react-native';
-import color from 'color'
+import color from 'color';
 
 const dimensions = Dimensions.get('window');
 
 const Layout = Object.freeze({
   ...dimensions,
-  isSmallDevice: dimensions.width <= 480
+  isSmallDevice: dimensions.width <= 360
 });
 
 const Theme = Object.freeze({
@@ -41,5 +41,6 @@ const Font = Object.freeze({
 export {
   Layout,
   Theme,
-  Font
+  Font,
+  // Icon
 };
