@@ -4,11 +4,15 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { setActiveOption } from '../actions';
-import { Layout, Theme } from '../config';
+import { Theme } from '../config';
+import { OptionCard } from '../lib';
 
 class QuestionsTab extends React.Component {
   static propTypes = {
-    filteredOptions: PropTypes.array
+    filteredOptions: PropTypes.array,
+    selectedContent: PropTypes.string,
+    setActiveOption: PropTypes.func,
+    selectedOption: PropTypes.number
   }
 
   renderContent = () => {
@@ -20,16 +24,13 @@ class QuestionsTab extends React.Component {
 
     return filteredOptions.map((option) => {
       return (
-        <TouchableOpacity
+        <OptionCard
           key={option.id}
           onPress={() => {
             this.props.setActiveOption(option.id);
           }}
-        >
-          <Text>
-            {option.title}
-          </Text>
-        </TouchableOpacity>
+          content={option.title}
+        />
       );
     });
   }
