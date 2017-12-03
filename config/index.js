@@ -1,4 +1,5 @@
 import { Dimensions } from 'react-native';
+import color from 'color'
 
 const dimensions = Dimensions.get('window');
 
@@ -14,6 +15,10 @@ const Theme = Object.freeze({
     PastelRed: '#ef6461',
     Platinum: '#e8e9eb',
     GainsBoro: '#e0dfd5',
+    White: '#FFF'
+  },
+  manipulate: (colorToBeManipulated) => {
+    return color(colorToBeManipulated);
   }
 });
 

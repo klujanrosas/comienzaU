@@ -16,7 +16,7 @@ class SplashScreen extends React.Component {
       () => {
         this.props.toHome();
       },
-      3000
+      500
     );
   }
 

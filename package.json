@@ -8,6 +8,7 @@
 	},
 	"dependencies": {
 		"babel-eslint": "^8.0.3",
+		"color": "^2.0.1",
 		"prop-types": "^15.6.0",
 		"react": "16.0.0",
 		"react-native": "0.50.4",
