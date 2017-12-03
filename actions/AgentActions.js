@@ -1,12 +1,11 @@
 import {
-  SET_ACTIVE_LEVEL,
+  SET_SPLASH_USED,
   SET_ACTIVE_OPTION
 } from './types';
 
-export const setActiveLevel = (levelID) => {
+export const setSplashUsed = () => {
   return {
-    type: SET_ACTIVE_LEVEL,
-    levelID
+    type: SET_SPLASH_USED
   };
 };
 

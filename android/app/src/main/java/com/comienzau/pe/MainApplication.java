@@ -1,4 +1,4 @@
-package pe.comienza.upn;
+package com.comienzau.pe;
 
 import android.app.Application;
 

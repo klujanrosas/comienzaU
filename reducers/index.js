@@ -5,5 +5,5 @@ import AgentReducer from './AgentReducer';
 
 export default combineReducers({
   Navigation: NavigationReducer,
-  Agent: AgentReducer
+  Agent: AgentReducer,
 });

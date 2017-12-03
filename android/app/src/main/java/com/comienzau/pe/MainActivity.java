@@ -1,4 +1,4 @@
-package pe.comienza.upn;
+package com.comienzau.pe;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "ComienzaUPN";
+        return "ComienzaU";
     }
 }
