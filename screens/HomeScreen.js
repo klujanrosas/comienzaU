@@ -49,11 +49,14 @@ const HomeScreen = TabNavigator(
     }
   },
   {
+    // initialRouteName: 'About',
     animationEnabled: true,
     tabBarPosition: 'bottom',
     tabBarOptions: {
       style: {
         elevation: 5,
+        borderTopColor: Theme.manipulate(Theme.Color.White).darken(0.14).string(),
+        borderTopWidth: 0.5,
         backgroundColor: Theme.Color.White
       },
       iconStyle: {

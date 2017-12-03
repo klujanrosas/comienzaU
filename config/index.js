@@ -23,7 +23,11 @@ const Theme = Object.freeze({
 });
 
 const Font = Object.freeze({
-  Family: {},
+  Family: {
+    Somatic: {
+      regular: 'Somatic-Rounded'
+    }
+  },
   Size: {
     h1: 32,
     h2: 24,

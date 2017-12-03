@@ -30,7 +30,7 @@ class SplashScreen extends React.Component {
       },
       image: {
         width: Layout.width - (Layout.isSmallDevice ? 100 : 50),
-        maxWidth: Layout.width
+        maxWidth: Layout.width,
       }
     };
     return (
