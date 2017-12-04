@@ -272,7 +272,7 @@ const mockContent = [
   {
     id: 3,
     content: 'Te convocamos a nuestro proceso de admisión por concurso público para el ciclo académico Pre Grado Tradicional 2018-1.'
-    },
+  },
   {
     id: 4,
     content: ' '
