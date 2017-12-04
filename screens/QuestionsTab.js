@@ -55,7 +55,8 @@ class QuestionsTab extends React.Component {
   render() {
     const styles = {
       container: {
-        flex: 1,
+        width: Layout.width,
+        minHeight: Layout.height - 60,
         backgroundColor: Theme.Color.White,
         alignItems: 'center',
         justifyContent: 'center',

@@ -675,10 +675,6 @@ const mockContent = [
   },
   {
     id: 3,
-    content: ''
-    },
-  {
-    id: 4,
     content: 'Te convocamos a nuestro proceso de admisión por concurso público para el ciclo académico Pre Grado Tradicional 2018-1.'
   },
   {
@@ -873,10 +869,11 @@ export default (state = INITIAL_STATE, action) => {
         ...state,
         selectedOption: action.optionID,
         filteredOptions,
+        // eslint-disable-next-line no-nested-ternary
         selectedContent: filteredOptions.length === 0 ?
           mockContent.filter(content => content.id === action.optionID).length > 0 ?
-          mockContent.filter(content => content.id === action.optionID)[0].content :
-          'Oops, Parece que no hay información para esta opción.' :
+            mockContent.filter(content => content.id === action.optionID)[0].content :
+            'Oops, Parece que no hay información para esta opción.' :
           null
       };
     default:
