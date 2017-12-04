@@ -37,11 +37,24 @@ class QuestionsTab extends React.Component {
 
   renderButton = () => {
     const { selectedOption } = this.props;
+    let parentOfParentId = -1;
     if (selectedOption && selectedOption !== -1) {
+      if (this.props.filteredOptions.length > 0) {
+        const parentId = this.props.filteredOptions[0].parent;
+        const parentOfParentArray = this.props.originalOptions.filter(option => option.id === parentId);
+        if (parentOfParentArray.length > 0) {
+          parentOfParentId = parentOfParentArray[0].parent;
+        }
+        console.log('Opciones ', parentOfParentArray);
+        console.log(`
+          Nodo padre de las opciones actuales: ${parentId}
+          Nodo padre del padre: ${parentOfParentId}
+        `);
+      }
       return (
         <Button
           onPress={() => {
-            this.props.setActiveOption(-1);
+            this.props.setActiveOption(parentOfParentId);
           }}
           width={60}
           label="INICIO"
@@ -77,6 +90,7 @@ class QuestionsTab extends React.Component {
 const mapStateToProps = (state) => {
   const {
     Agent: {
+      options,
       filteredOptions,
       selectedContent,
       selectedOption,
@@ -85,6 +99,7 @@ const mapStateToProps = (state) => {
   } = state;
 
   return {
+    originalOptions: options,
     filteredOptions,
     selectedContent,
     selectedOption,
