@@ -18,7 +18,6 @@ class QuestionsTab extends React.Component {
   renderContent = () => {
     const { filteredOptions, selectedContent } = this.props;
     if (selectedContent) {
-      console.log('SELECTED CONTENT', selectedContent);
       return <Text>{selectedContent}</Text>;
     }
 
@@ -37,24 +36,12 @@ class QuestionsTab extends React.Component {
 
   renderButton = () => {
     const { selectedOption } = this.props;
-    let parentOfParentId = -1;
     if (selectedOption && selectedOption !== -1) {
-      if (this.props.filteredOptions.length > 0) {
-        const parentId = this.props.filteredOptions[0].parent;
-        const parentOfParentArray = this.props.originalOptions.filter(option => option.id === parentId);
-        if (parentOfParentArray.length > 0) {
-          parentOfParentId = parentOfParentArray[0].parent;
-        }
-        console.log('Opciones ', parentOfParentArray);
-        console.log(`
-          Nodo padre de las opciones actuales: ${parentId}
-          Nodo padre del padre: ${parentOfParentId}
-        `);
-      }
+      const parentId = this.props.originalOptions.filter(option => option.id === selectedOption)[0].parent;
       return (
         <Button
           onPress={() => {
-            this.props.setActiveOption(parentOfParentId);
+            this.props.setActiveOption(parentId);
           }}
           width={60}
           label="INICIO"
