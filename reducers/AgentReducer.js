@@ -249,7 +249,411 @@ const mockOptions = [
     parent: 36,
     title: '¿Puedo ingresar a más de una charla?',
     endBranch: true,
-  }
+  },
+  {
+    id: 42,
+    parent: -1,
+    title: 'Carreras',
+    endBranch: false,
+  },
+  {
+    id: 43,
+    parent: 42,
+    title: 'Ingeniería de sistemas computacionales',
+    endBranch: false,
+  },
+  {
+    id: 44,
+    parent: 43,
+    title: 'Misión',
+    endBranch: true,
+  },
+  {
+    id: 45,
+    parent: 43,
+    title: 'Perfil del egresado',
+    endBranch: true,
+  },
+  {
+    id: 46,
+    parent: 43,
+    title: 'Malla',
+    endBranch: false,
+  },
+// Curso desde el 50 para no confundirme XD 
+{
+  id: 50,
+  parent: 46,
+  title: 'Ciclo 1',
+  endBranch: false,
+},
+{
+  id: 51,
+  parent: 50,
+  title: 'Desarrollo del Talento',
+  endBranch: true,
+},
+{
+  id: 52,
+  parent: 50,
+  title: 'Complementos de Matemática',
+  endBranch: true,
+},
+{
+  id: 53,
+  parent: 50,
+  title: 'Introducción a la Ingeniería de Sistemas Computacionales',
+  endBranch: true,
+},
+{
+  id: 54,
+  parent: 50,
+  title: 'Responsabilidad Social',
+  endBranch: true,
+},
+{
+  id: 55,
+  parent: 50,
+  title: 'Psicología de la Felicidad',
+  endBranch: true,
+},
+{
+  id: 56,
+  parent: 50,
+  title: 'Comunicación 1',
+  endBranch: true,
+},
+{
+  id: 57,
+  parent: 46,
+  title: 'Ciclo 2',
+  endBranch: false,
+},
+{
+  id: 58,
+  parent: 57,
+  title: 'Matemática Básica',
+  endBranch: true,
+},
+{
+  id: 59,
+  parent: 57,
+  title: 'Fundamentos de Algoritmos',
+  endBranch: true,
+},
+{
+  id: 60,
+  parent: 57,
+  title: 'Metodología Universitaria',
+  endBranch: true,
+},
+{
+  id: 61,
+  parent: 57,
+  title: 'Herramientas Informáticas',
+  endBranch: true,
+},
+{
+  id: 62,
+  parent: 57,
+  title: 'Comunicación 2',
+  endBranch: true,
+},
+{
+  id: 63,
+  parent: 46,
+  title: 'Ciclo 3',
+  endBranch: false,
+},
+{
+  id: 64,
+  parent: 63,
+  title: 'Cálculo 1',
+  endBranch: true,
+},
+{
+  id: 65,
+  parent: 63,
+  title: 'Fundamentos de Programación',
+  endBranch: true,
+},
+{
+  id: 66,
+  parent: 63,
+  title: 'Matemática Discreta',
+  endBranch: true,
+},
+{
+  id: 67,
+  parent: 63,
+  title: 'Mecánica, Oscilación y Ondas',
+  endBranch: true,
+},
+{
+  id: 68,
+  parent: 63,
+  title: 'Comunicación 3',
+  endBranch: true,
+},
+{
+  id: 69,
+  parent: 46,
+  title: 'Ciclo 4',
+  endBranch: false,
+},
+{
+  id: 70,
+  parent: 69,
+  title: 'Estructura de Datos',
+  endBranch: false,
+},
+{
+  id: 71,
+  parent: 69,
+  title: 'Cálculo 2',
+  endBranch: false,
+},
+{
+  id: 72,
+  parent: 69,
+  title: 'Probabilidad y Estadística',
+  endBranch: false,
+},
+{
+  id: 73,
+  parent: 69,
+  title: 'Optimización y Simulación',
+  endBranch: false,
+},
+{
+  id: 74,
+  parent: 69,
+  title: 'Electricidad, Magnetismo y Óptica',
+  endBranch: false,
+},
+{
+  id: 75,
+  parent: 46,
+  title: 'Ciclo 5',
+  endBranch: false,
+},
+{
+  id: 76,
+  parent: 75,
+  title: 'Técnicas de Programación Orientada a Objetos',
+  endBranch: false,
+},
+{
+  id: 77,
+  parent: 75,
+  title: 'Base de Datos',
+  endBranch: false,
+},
+{
+  id: 78,
+  parent: 75,
+  title: 'Electrónica Digital',
+  endBranch: false,
+},
+{
+  id: 79,
+  parent: 75,
+  title: 'Empleabilidad',
+  endBranch: false,
+},
+{
+  id: 80,
+  parent: 75,
+  title: 'Análisis de Algoritmos y Estrategias de Programación',
+  endBranch: false,
+},
+{
+  id: 81,
+  parent: 46,
+  title: 'Ciclo 6',
+  endBranch: false,
+},
+{
+  id: 82,
+  parent: 81,
+  title: 'Taller de Base de Datos',
+  endBranch: false,
+},
+{
+  id: 83,
+  parent: 81,
+  title: 'Metodología de la Investigación',
+  endBranch: false,
+},
+{
+  id: 84,
+  parent: 81,
+  title: 'Inglés Básico 1',
+  endBranch: false,
+},
+{
+  id: 85,
+  parent: 81,
+  title: 'Modelamiento y Análisis de Software',
+  endBranch: false,
+},
+{
+  id: 86,
+  parent: 81,
+  title: 'Computación Gráfica y Visual',
+  endBranch: false,
+},
+{
+  id: 87,
+  parent: 81,
+  title: 'Arquitectura de Computadoras',
+  endBranch: false,
+},
+{
+  id: 88,
+  parent: 46,
+  title: 'Ciclo 7',
+  endBranch: false,
+},
+{
+  id: 89,
+  parent: 88,
+  title: 'Sistemas Operativos',
+  endBranch: false,
+},
+{
+  id: 90,
+  parent: 88,
+  title: 'Inglés Básico 2',
+  endBranch: false,
+},
+{
+  id: 91,
+  parent: 88,
+  title: 'Compiladores y Lenguaje de Programación',
+  endBranch: false,
+},
+{
+  id: 92,
+  parent: 88,
+  title: 'Proyecto Social',
+  endBranch: false,
+},
+{
+  id: 93,
+  parent: 88,
+  title: 'Redes 1',
+  endBranch: false,
+},
+{
+  id: 94,
+  parent: 88,
+  title: 'Diseño y Arquitectura de Software',
+  endBranch: false,
+},
+{
+  id: 95,
+  parent: 46,
+  title: 'Ciclo 8',
+  endBranch: false,
+},
+{
+  id: 96,
+  parent: 95,
+  title: 'Soluciones Web y Aplicaciones Distribuidas',
+  endBranch: false,
+},
+{
+  id: 97,
+  parent: 95,
+  title: 'Redes 2',
+  endBranch: false,
+},
+{
+  id: 98,
+  parent: 95,
+  title: 'Calidad y Pruebas de Software',
+  endBranch: false,
+},
+{
+  id: 99,
+  parent: 95,
+  title: 'Práctica Preprofesional',
+  endBranch: false,
+},
+{
+  id: 100,
+  parent: 95,
+  title: 'Taller de Robótica',
+  endBranch: false,
+},
+{
+  id: 101,
+  parent: 46,
+  title: 'Ciclo 9',
+  endBranch: false,
+},
+{
+  id: 102,
+  parent: 101,
+  title: 'Videojuegos y Aplicaciones Móviles',
+  endBranch: false,
+},
+{
+  id: 103,
+  parent: 101,
+  title: 'Proyecto de Tesis',
+  endBranch: false,
+},
+{
+  id: 104,
+  parent: 101,
+  title: 'Electivo de Especialidad 1',
+  endBranch: false,
+},
+{
+  id: 105,
+  parent: 101,
+  title: 'Innovación, Tecnología y Emprendimiento',
+  endBranch: false,
+},
+{
+  id: 106,
+  parent: 101,
+  title: 'Administración de Proyectos de Software',
+  endBranch: false,
+},
+{
+  id: 107,
+  parent: 46,
+  title: 'Ciclo 10',
+  endBranch: false,
+},
+{
+  id: 108,
+  parent: 107,
+  title: 'Sistemas Inteligentes',
+  endBranch: false,
+},
+{
+  id: 109,
+  parent: 107,
+  title: 'Tesis',
+  endBranch: false,
+},
+{
+  id: 110,
+  parent: 107,
+  title: 'Gestión y Planeamiento',
+  endBranch: false,
+},
+{
+  id: 111,
+  parent: 107,
+  title: 'Electivo de Especialidad 2',
+  endBranch: false,
+}
+
 ];
 
 // En el array de arriba se ponen todas las opciones en jerarquia de padre hijo
@@ -424,8 +828,27 @@ const mockContent = [
   {
     id: 41,
     content: ' Sí, pero debes inscribirte previamente'
+  },
+  {
+    id: 42,
+    content: ' '
+  },
+  {
+    id: 43,
+    content:''
+  },
+  {
+    id: 44,
+    content: ' Formamos profesionales líderes e innovadores que producen soluciones y mejoras en los procesos de las organizaciones, con sólida formación en los principios de ingeniería de software, ciencias de la computación, ingeniería de software y tecnologías de información. Con contacto internacional, visión global y empresarial, guiados por un sentido ético, vocación de servicio, así como una constante orientación al logro para generar progreso y desarrollo sostenible para la sociedad y para sí mismos.'
+  },
+  {
+    id: 45,
+    content: 'Serás un agente de cambio que aplica sus conocimientos y habilidades en la creación de soluciones y mejoras en las organizaciones.Participarás exitosamente, de manera individual o en equipo, en el desarrollo y/o mantenimiento de soluciones de software para la industria (negocios propios o de terceros), mediante la integración de procesos, tecnologías de la información y personas, basándose en normas y estándares propios del área. Serás un ciudadano comprometido con el desarrollo social y económico de tu comunidad, que respeta a las personas y su medio ambiente y toma decisiones éticas.Te mantendrás actualizado continuamente en tu desarrollo profesional, mediante estudios de especialización y postgrado.'
+  },
+  {
+    id: 46,
+    content: ' '
   }
-  
   // Como esto está comentado, cuando seleccionemos la opción de SUBREQUISITO-2 nos saldrá un mensaje de que no hay información en vez de crashear
   // {
   //   id: 9007,
